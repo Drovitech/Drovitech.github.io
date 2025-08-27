@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 10px;
+  border-radius: 40px;
+  background: #d0d0d0;
+  color: #000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 80px;
+  height: 40px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+section {
+  padding: 120px 80px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+section p {
+  text-align: center;
+}
+
+.quienes-somos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.quienes-somos img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.aprendizaje {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.aprendizaje ul {
+  list-style: disc inside;
+  padding-left: 20px;
+}
+
+.aprendizaje .imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aprendizaje .imagenes img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.carrusel {
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.carrusel-contenido {
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
+}
+
+.carrusel-item {
+  flex: 1 0 30%;
+  margin-top: 1%;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* Formularios login */
+.login-container {
+  max-width: 400px;
+  text-align: center;
+  margin: 60px auto;
+  padding: 30px;
+  border: 1px solid #00ccff;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.login-container label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #00ccff;
+}
+
+.login-container a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #00ccff;
+  color: #fff;
+  border: 1px solid;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.login-container a:hover {
+  background: black;
+  color: white;
+}
+
+.login-container p {
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+/*Cursos*/
+
+.cursos {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.cursos h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 130px;
+  margin-bottom: 200px;
+}
+
+.curso {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 200px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.curso-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.curso-logo img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.curso-logo .marca {
+  background: #000;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.curso-info {
+  flex: 1;
+}
+
+.curso-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.progreso {
+  width: 100%;
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.barra {
+  height: 100%;
+  background: #000;
+  width: 70%; /* Ajusta según el progreso */
+}
+
+.barra.bajo {
+  width: 10%;
+}
+
+.barra.medio {
+  width: 50%;
+}
+
+.btn-ir {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 40px;
+  background: #d0d0d0;
+  color: #000;
+}
